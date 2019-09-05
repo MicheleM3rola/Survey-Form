@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id='title'>Survey Form </h1>
+    <div class="container">
+        <div class="survey-box">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+            <form id="survey-form" action="www.freecodecamp.org" method="get">
+
+
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="name-label">*Name:</label>
+                    </div>
+
+                    <div class="right-side">
+                        <input autofocus class="inputstyle" type="text" id="name-label" placeholder="Enter your Name" name="Username" required>
+                    </div>
+
+                </div>
+
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="email-label">*Email:</label>
+                    </div>
+
+                    <div class="right-side">
+                        <input autofocus class="inputstyle" type="text" id="email-label" placeholder="Enter your Email" name="Email" required>
+                    </div>
+
+                </div>
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="number-label">*Age:</label>
+                    </div>
+
+                    <div class="right-side">
+                        <input autofocus class="inputstyle" type="number" id="number-label" name="age" min='1' max="100" placeholder="Age">
+                    </div>
+
+                </div>
+
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="dropdown">Which option best describes your current role?</label>
+                    </div>
+
+                    <div class="right-side">
+                        <select name="role" class="dropdown">
+                            <option value="" disabled selected value>Select an option</option>
+                            <option value="Student">Student</option>
+                            <option value="Full Time Job">Full Time Job</option>
+                            <option value="Full Time LEarner">Full Time Learner</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="other">Other</option>
+
+                        </select>
+                    </div>
+
+                </div>
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="ratingstop">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </div>
+
+                    <div class="right-side">
+                        <ul id="ratingstop" style="list-style: none">
+                            <li class="radio">Definetely<label><input name="radio-button" type="radio" value='1' class="ratings"></label> </li>
+                            <li class="radio">Maybe<label><input name="radio-button" type="radio" value='2' class="ratings"></label> </li>
+                            <li class="radio">Not Sure<label><input name="radio-button" type="radio" value='3' class="ratings"> </label> </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="dropdown">What do you like most in FCC:</label>
+                    </div>
+
+                    <div class="right-side">
+                        <select name="mostlike" class="dropdown">
+                            <option value="" disabled selected value>Select an option</option>
+                            <option value="1">Challanges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                            <option value="4">Open Source</option>
+
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="preferences">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </div>
+
+                    <div class="right-side">
+                        <ul id="preferences" style="list-style: none">
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='1' class="ratings">Front-end Projects</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='2' class="ratings">Back-end Projects</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='3' class="ratings">Data Visualization</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='4' class="ratings">Challenges</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='5' class="ratings">Open Source Community</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='6' class="ratings">Gitter help rooms</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='7' class="ratings">Videos</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='1' class="ratings">City Meetups</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='1' class="ratings">Wiki</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='1' class="ratings">Forum</label></li>
+                            <li class="checkbox"><label><input name="prefer" type="checkbox" value='1' class="ratings">Additional Courses</label></li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="rowtab">
+                    <div class="labels">
+                        <label for="comments">* Any Comments or Suggestions?</label>
+                    </div>
+
+                    <div class="right-side">
+                      <textarea style="height:50px;resize:vertical;"  class="inputstyle" name="comments" id="comments">Enter a Comment</textarea>
+                       
+
+                    </div>
+                </div>
+                
+                <button type="submit" id="submit">Submit</button>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
